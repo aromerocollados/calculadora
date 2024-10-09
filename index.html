@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled>
+        <div class="botones">
+            <input type="button" value="C" onclick="limpiarPantalla()" class="funcion-btn">
+            <input type="button" value="CE" onclick="borrarEntrada()" class="funcion-btn">
+            <input type="button" value="/" onclick="añadirCaracter('/')" class="operador-btn">
+            <input type="button" value="*" onclick="añadirCaracter('*')" class="operador-btn">
+            <input type="button" value="7" onclick="añadirCaracter('7')" class="numero-btn">
+            <input type="button" value="8" onclick="añadirCaracter('8')" class="numero-btn">
+            <input type="button" value="9" onclick="añadirCaracter('9')" class="numero-btn">
+            <input type="button" value="-" onclick="añadirCaracter('-')" class="operador-btn">
+            <input type="button" value="4" onclick="añadirCaracter('4')" class="numero-btn">
+            <input type="button" value="5" onclick="añadirCaracter('5')" class="numero-btn">
+            <input type="button" value="6" onclick="añadirCaracter('6')" class="numero-btn">
+            <input type="button" value="+" onclick="añadirCaracter('+')" class="operador-btn">
+            <input type="button" value="1" onclick="añadirCaracter('1')" class="numero-btn">
+            <input type="button" value="2" onclick="añadirCaracter('2')" class="numero-btn">
+            <input type="button" value="3" onclick="añadirCaracter('3')" class="numero-btn">
+            <input type="button" value="=" onclick="calcularResultado()" class="igual-btn">
+            <input type="button" value="0" onclick="añadirCaracter('0')" class="numero-btn cero">
+            <input type="button" value="." onclick="añadirCaracter('.')" class="numero-btn">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

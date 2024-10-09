@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #023CC1, #0CE8E6);
+}
+
+.calculadora {
+    background-color: #f3e5ab;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pantalla {
+    width: 90%;
+    padding: 15px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+input[type="button"] {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"].numero-btn {
+    background-color: #ffffff;
+    color: #333;
+}
+
+input[type="button"].operador-btn, input[type="button"].funcion-btn {
+    background-color: #b56576;
+    color: #ffffff;
+}
+
+input[type="button"].igual-btn {
+    background-color: #6d597a;
+    color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+input[type="button"].cero {
+    grid-column: span 2;
+}
+
+input[type="button"]:hover {
+    background-color: #eaeaea;
+}
+
+input[type="button"]:active {
+    background-color: #ddd;
+}
